@@ -40,6 +40,14 @@ const (
 	IPv6  IPtypes = 6
 	IPv4i IPindex = 0
 	IPv6i IPindex = 1
+
+	Panic = logrus.PanicLevel
+	Fatal = logrus.FatalLevel
+	Error = logrus.ErrorLevel
+	Warn  = logrus.WarnLevel
+	Info  = logrus.InfoLevel
+	Debug = logrus.DebugLevel
+	Trace = logrus.TraceLevel
 )
 
 var (
