@@ -50,6 +50,13 @@ const (
 	Trace = logrus.TraceLevel
 )
 
+// How to access: TCP[(IPtypes >> 1) & 1]
+var (
+	TCP = []string{"tcp4", "tcp6"}
+	UDP = []string{"udp4", "udp6"}
+)
+
+// Regular expressions
 var (
 	fNameRe = regexp.MustCompile(`^.*/[^/]*\.([^/]*)$`)
 	mNameRe = regexp.MustCompile(`^.*/[^/]*\.(\(\*[^/]*\)\.[^/]*)$`)
